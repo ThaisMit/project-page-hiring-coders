@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Quicksand", arial, helvetica;
+  font-weight: bold;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.painel {
+  padding: 15px;
+  padding-left: 70px;
+  background-color: #f5dcfa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.painel .logo {
+  background-color: #d7b3f7;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  font-size: 25px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  padding-right: 25px;
+}
+
+a:hover {
+  color:#ad57fa;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+.container {
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .name h1 {
+  font-size: 50px;
+  color: #984eda;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.container .name h5 {
+  font-size: 26px;
+  padding: 20px;
+}
+
+.container .info #arrow {
+  font-size: 25px;
+  padding: 6px;
+  padding-left: 140px;
+  cursor: pointer;
+  animation: blink 0.8s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#animation {
+  transition: 1s;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 2s;
+}
+
+.active {
+  display: block !important;
+}
+
+#about p {
+  font-size: 20px;
+  max-width: 500px;
+  padding: 15px;
+}
+
+.form {
+  padding-left: 15px;
+  font-size: 19px;
+  margin-bottom: 80px;
+}
+
+.form p {
+  max-width: 500px;
+  padding: 10px;
+}
+
+.form input {
+  font-size: 19px;
+  width: 70%;
+  border: 1px outset rgb(81, 46, 92);
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.form button {
+  font-size: 19px;
+  width: 25%;
+  border-radius: 7px;
+  border: 1px outset rgb(81, 46, 92);
+  padding: 5px;
+}
+
+.form button:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, rgba(185, 123, 215, 0.933) 50%, rgb(229, 175, 244) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.projeto h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #984eda;
+  padding: 20px;
+  padding-top: 110px;
+  border-top: 5px dashed rgb(183, 123, 240);
+  background-position: left bottom;
+}
+
+.pokebola {
+  margin: 20px;
+  border: 4px inset rgb(161, 102, 200);
+  border-radius: 8px;
+}
+
+.pokebola h5 {
+  font-size: 30px;
+  padding: 20px;
+  border-bottom: 4px inset rgb(161, 102, 200);
+}
+
+.pokebola img {
+  padding-left: 60px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  width: 390px;
+}
+
+.projeto p {
+  font-size: 20px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+}
+
+.projeto p a {
+  color:rgb(161, 102, 200);
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #f5dcfa;
+}
+
+footer p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #000;
+}
+
+@media screen and (max-width: 480px) {
+  .painel {
+    padding-left: 20px;
+  }
+  
+  .painel .logo {
+    font-size: 20px;
+  }
+
+  .painel ul a {
+    font-size: 20px;
+    padding-right: 20px;
+  }
+
+  .container .gif img {
+    width: 360px;
+  }
+
+  .container {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .container .name h1 {
+    font-size: 42px;
+  }
+
+  .container #about p {
+    max-width: 80%;
+    text-align: justify;
+  }
+
+  .container .form {
+    font-size: 17px;
+  }
+
+  .container .form input {
+    font-size: 16px;
+    width: 65%;
+  }
+
+  .container .form button {
+    font-size: 16px;
+  }
+
+  .projeto h2 {
+    font-size: 35px;
+    padding-top: 50px;
+  }
+
+  .projeto .pokebola img {
+    padding-left: 20px;
+    width: 350px;
+  }
+
+  .projeto .pokebola p {
+    padding-left: 20px;
+  }
+
+}

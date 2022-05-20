@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.icons8.com/nolan/64/settings--v1.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/65602b8a62.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Thais Almeida</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="painel">
+        <a
+          class="logo"
+          href="file:///C:/Users/igorm/Desktop/Programa%C3%A7%C3%A3o/Hiring%20Coders/workspace/site-css/index.html"
+          >T M</a
+        >
+        <ul>
+          <li>
+            <a target="_blank" href="https://github.com/ThaisMit">GitHub</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/sthais.m"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="mailto:thaismotta2004@gmail.com">Email</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <figure class="gif">
+          <img
+            src="https://media.giphy.com/media/i4f9cTvKk7CSbEV2ep/giphy.gif"
+          />
+        </figure>
+        <section class="info">
+          <div class="name">
+            <h1>Thais Almeida</h1>
+            <h5>Programming beginner</h5>
+          </div>
+          <div onclick="displayAbout()" id="arrow">
+            <i id="animation" class="fa-solid fa-angles-down"></i>
+          </div>
+          <div style="display: none" id="about">
+            <p>
+              Hello World! My name is Thais Almeida and I'm working on becoming
+              a dev. I started my programming studies 1 year ago and for now I
+              have knowledge about CSS, HTML and Python; I'm also struggling to
+              learn JavaScript. I have a basic knowledge of programming logic
+              and some technological knowledge. The focus is to continue
+              absorbing knowledge!
+            </p>
+          </div>
+          <div class="form">
+            <div>
+              <p>If you want, get in touch!</p>
+            </div>
+            <form action="">
+              <input type="text" placeholder="Enter your best email!" />
+              <button>To send!</button>
+            </form>
+          </div>
+        </section>
+      </section>
+      <div class="projeto">
+        <h2>Projects</h2>
+        <div class="pokebola">
+          <h5>• Pokeball</h5>
+          <img src="images/pokebola.jpg" />
+          <p>
+            Web page link:
+            <a
+              target="_blank"
+              href="https://thaismit.github.io/project-pokedex-mapadevweek/"
+              >Thais's Pokédex</a
+            >
+          </p>
+        </div>
+      </div>
+      <footer>
+        <p>
+          Developed by Thais Almeida
+          <a target="_blank" href="https://github.com/ThaisMit"
+            ><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"
+          /></a>
+        </p>
+      </footer>
+    </main>
+    <script>
+      function displayAbout() {
+        var arrow = document.getElementById('animation')
+        arrow.classList.toggle('rotate')
+        var display = document.getElementById('about')
+        display.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
